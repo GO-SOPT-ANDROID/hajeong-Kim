@@ -18,6 +18,7 @@ class SignInActivity : BindingActivity<ActivitySignInBinding>(R.layout.activity_
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(binding.root)
         initLoginBtnClickListener()
         initSignUpBtnClickListener()
         setSignUp()
