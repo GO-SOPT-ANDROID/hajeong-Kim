@@ -22,7 +22,7 @@
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="90dp"
             android:maxLines="1"
-            android:text="@string/tv_main_title"
+            android:text="@string/sign_in_title"
             android:textSize="23dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,11 +31,10 @@
 
         <TextView
             android:id="@+id/tv_sign_in_id"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
             android:layout_marginTop="50dp"
-            android:text="@string/tv_main_id"
+            android:text="@string/sign_id"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/tv_sign_in_title"
@@ -44,9 +43,8 @@
 
         <EditText
             android:id="@+id/et_sign_in_id"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
             android:hint="아이디를 입력하세요"
             app:layout_constraintEnd_toEndOf="@id/tv_sign_in_id"
             app:layout_constraintStart_toStartOf="@id/tv_sign_in_id"
@@ -54,11 +52,10 @@
 
         <TextView
             android:id="@+id/tv_sign_in_pw"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
             android:layout_marginTop="50dp"
-            android:text="@string/tv_main_pw"
+            android:text="@string/sign_pw"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/tv_sign_in_title"
@@ -67,9 +64,8 @@
 
         <EditText
             android:id="@+id/et_sign_in_pw"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
             android:hint="비밀번호를 입력하세요"
             app:layout_constraintEnd_toEndOf="@id/tv_sign_in_pw"
             app:layout_constraintStart_toStartOf="@id/tv_sign_in_pw"
@@ -81,8 +77,9 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="40dp"
+            android:backgroundTint="@color/pink_pale"
             android:paddingVertical="10dp"
-            android:text="@string/tv_main_login"
+            android:text="@string/sign_login"
             app:layout_constraintTop_toBottomOf="@id/et_sign_in_pw" />
 
         <Button
@@ -91,8 +88,9 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="20dp"
+            android:backgroundTint="@color/pink_pale"
             android:paddingVertical="10dp"
-            android:text="@string/btn_main_sign_up"
+            android:text="@string/sign_sign_up"
             app:layout_constraintTop_toBottomOf="@id/btn_sign_in_login" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
