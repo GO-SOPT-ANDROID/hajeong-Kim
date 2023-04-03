@@ -13,6 +13,7 @@ class SignUpActivity : BindingActivity<ActivitySignUpBinding>(R.layout.activity_
     private lateinit var resultLauncher: ActivityResultLauncher<Intent>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(binding.root)
         initCompleteBtnClickListener()
     }
 
@@ -42,7 +43,7 @@ class SignUpActivity : BindingActivity<ActivitySignUpBinding>(R.layout.activity_
             binding.etSignUpId.text.toString(),
             binding.etSignUpPw.text.toString(),
             binding.etSignUpName.text.toString(),
-            binding.etSginUpTalent.text.toString()
+            binding.etSignUpTalent.text.toString()
         )
         val intent = Intent(this@SignUpActivity, SignInActivity::class.java)
         intent.putExtra(USER, user)
