@@ -39,7 +39,10 @@ class SignInActivity : BindingActivity<ActivitySignInBinding>(R.layout.activity_
     }
 
     private fun initSignUpBtnClickListener() {
-        startActivity(Intent(this, SignUpActivity::class.java))
+        binding.btnSignInSignUp.setOnClickListener {
+            val signUpIntent = Intent(this, SignUpActivity::class.java)
+            resultLauncher.launch(signUpIntent)
+        }
     }
 
     private fun goToProfile() {
