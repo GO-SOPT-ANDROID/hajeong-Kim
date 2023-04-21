@@ -2,7 +2,6 @@ package org.android.go.sopt.week1.presentation.sign
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.result.ActivityResultLauncher
 import com.google.android.material.snackbar.Snackbar
 import org.android.go.sopt.R
 import org.android.go.sopt.databinding.ActivitySignUpBinding
@@ -10,7 +9,6 @@ import org.android.go.sopt.week1.data.User
 import org.android.go.sopt.week1.utill.BindingActivity
 
 class SignUpActivity : BindingActivity<ActivitySignUpBinding>(R.layout.activity_sign_up) {
-    private lateinit var resultLauncher: ActivityResultLauncher<Intent>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -20,10 +18,16 @@ class SignUpActivity : BindingActivity<ActivitySignUpBinding>(R.layout.activity_
     private fun isComplete() {
         if (isCheck()) {
             setUser()
-            Snackbar.make(binding.root, getString(R.string.signup_complete),Snackbar.LENGTH_SHORT
+            Snackbar.make(
+                binding.root,
+                getString(R.string.signup_complete),
+                Snackbar.LENGTH_SHORT
             ).show()
         } else {
-            Snackbar.make(binding.root, getString(R.string.signup_failure),Snackbar.LENGTH_SHORT
+            Snackbar.make(
+                binding.root,
+                getString(R.string.signup_failure),
+                Snackbar.LENGTH_SHORT
             ).show()
         }
     }

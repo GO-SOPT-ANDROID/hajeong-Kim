@@ -31,7 +31,7 @@ class SignInActivity : BindingActivity<ActivitySignInBinding>(R.layout.activity_
             } else {
                 Snackbar.make(
                     binding.root,
-                    "로그인 실패했습니다.",
+                    getString(R.string.signin_failure),
                     Snackbar.LENGTH_SHORT
                 ).show()
             }
@@ -54,10 +54,10 @@ class SignInActivity : BindingActivity<ActivitySignInBinding>(R.layout.activity_
         resultLauncher =
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
                 if (result.resultCode == RESULT_OK) {
-                    if (result.data?.hasExtra("user") == true) {
+                    if (result.data?.hasExtra(USER) == true) {
                         Snackbar.make(
                             binding.root,
-                            "회원가입에 성공했습니다.",
+                            getString(R.string.signin_complete),
                             Snackbar.LENGTH_SHORT
                         ).show()
                         user = result.data?.getParcelable(USER, User::class.java)

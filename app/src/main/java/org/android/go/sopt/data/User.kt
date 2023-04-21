@@ -1,4 +1,4 @@
-package org.android.go.sopt.week1.data
+package org.android.go.sopt.data
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
