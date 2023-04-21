@@ -7,9 +7,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 import com.google.android.material.snackbar.Snackbar
 import org.android.go.sopt.R
 import org.android.go.sopt.databinding.ActivitySignInBinding
-import org.android.go.sopt.week1.data.User
+import org.android.go.sopt.data.User
 import org.android.go.sopt.week1.presentation.profile.ProfileActivity
-import org.android.go.sopt.week1.utill.BindingActivity
+import org.android.go.sopt.week1.utill.binding.BindingActivity
 import org.android.go.sopt.week1.utill.getParcelable
 
 class SignInActivity : BindingActivity<ActivitySignInBinding>(R.layout.activity_sign_in) {

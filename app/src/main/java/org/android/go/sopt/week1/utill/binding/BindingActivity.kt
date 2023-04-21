@@ -1,4 +1,4 @@
-package org.android.go.sopt.week1.utill
+package org.android.go.sopt.week1.utill.binding
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes

@@ -5,8 +5,8 @@ import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import org.android.go.sopt.R
 import org.android.go.sopt.databinding.ActivitySignUpBinding
-import org.android.go.sopt.week1.data.User
-import org.android.go.sopt.week1.utill.BindingActivity
+import org.android.go.sopt.data.User
+import org.android.go.sopt.week1.utill.binding.BindingActivity
 
 class SignUpActivity : BindingActivity<ActivitySignUpBinding>(R.layout.activity_sign_up) {
     override fun onCreate(savedInstanceState: Bundle?) {
