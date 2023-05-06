@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">GO SOPT Android</string>
+    <string name="sign_in_title">Welcome to GO ANDROID !</string>
+    <string name="sign_id">ID</string>
+    <string name="sign_pw">PW</string>
+    <string name="sign_login">LOGIN</string>
+    <string name="sign_sign_up">SIGN UP</string>
+
+    <string name="signup_complete">회원가입이 완료되었습니다!</string>
+    <string name="signup_failure">회원가입 실패 , 입력한 정보 확인해주세요.</string>
+    <string name="sign_up_title">SIGN UP</string>
+    <string name="sign_up_name">NAME</string>
+    <string name="sign_up_talent">특기</string>
+
+    <!-- Util -->
+    <string name="binding_error">Binding not initialized to reference the view.</string>
+
+    <string name="signin_failure">로그인 실패했습니다.</string>
+    <string name="signin_complete">회원가입에 성공했습니다.</string>
+
+    <string name="menu_home">home</string>
+    <string name="menu_gallery">gallery</string>
+    <string name="menu_search">search</string>
+    <string name="tv_gallery_title">갤러리</string>
+
 </resources>
